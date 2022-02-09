@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>College Registration Website</title>
+<link rel="stylesheet" href="registration.css" type="text/css" />
+ <script src="regis.js"></script> 
+</head>
+<body bgcolor="lightblue">
+<div id="header" align="center"> Registration Form</div>
+<div class="form-style">
+  <h2>All Fields are Mandatory</h2>
+<form name="form1" method="post" action="#" OnSubmit="return fncValidate();" autocomplete="off">
+  <table align="center" width="400" border="0">
+      <tr>
+        <td width="125"> &nbsp;Firstname</td>
+        <td width="180"><div class="input-group">
+          <input type="text" name="fname" size="20" placeholder="enter firstname"></div>
+        </td>
+      </tr> 
+	  <tr>
+        <td width="125"> &nbsp;Lastname</td>
+        <td width="180"><div class="input-group" >
+          <input type="text" name="lname" size="20" placeholder="enter lastname"></div>
+        </td>
+      </tr>
+	  <tr>
+	  <td> &nbsp;Upload Photo</td>
+	  <td>  <div class="input-group">
+	  <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> </div>
+	  </td>
+	  </tr>
+	  <tr><td> &nbsp;Gender:</td><td><span id="gen"><input type="radio" name="gender" value="male" id="male"> Male
+	  <input type="radio" name="gender" value="female" id="female"> Female</span></td></tr>
+	  <tr><td> &nbsp;Address:</td><td><textarea name="address" class="textarea-field" placeholder="enter address"></textarea></td></tr>
+	  <tr><td> &nbsp;Country: </td><td><div class="input-group">
+<select id="country">
+<option value=""> &nbsp;Choose a country</option>
+<option value="aus">Australia</option>
+<option value="gb"> Britain</option>
+<option value="cam">cameroon</option>
+<option value="den">Denmark</option>
+<option value="egy">Egypt</option>
+<option value="fin">Finland</option>
+<option value="ger">Germany</option>
+<option value="hon">HongKong</option>
+<option value="ind">India</option>
+<option value="jap">Japan</option>
+<option value="kuw">Kuwait</option>
+<option value="mal">Maldives</option>
+<option value="nep">Nepal</option>
+<option value="oma">Oman</option>
+<option value="por">Portugal</option>
+<option value="rom">Romania</option>
+<option value="swe">Sweden</option>
+<option value="tha">Thailand</option>
+<option value="tur">Turkey</option>
+<option value="ukr">Ukraine</option>
+<option value="uni">United Kingdom</option>
+<option value="usa">USA</option>
+<option value="uae">UAE</option>
+<option value="yem">Yemen</option>
+<option value="zam">Zambia</option>
+<option value="zim">Zimbambwe</option>
+
+</select>
+</div></td></tr>
+<tr>
+        <td> &nbsp;Mobile No:</td> 
+        <td><div  class="input-group"><input type="text" name="phone"placeholder="enter mobile no"></div>
+        </td> 
+      </tr>
+	  <tr><td>SSLC Board: </td><td><div class="input-group">
+<select id="board">
+<option value="">Select Board</option>
+<option value="aus">Board of secondary education(Andhra pradesh)</option>
+<option value="gb">Board of secondary education Assam</option>
+<option value="cam">Bihar school examination board</option>
+<option value="den">Chattisgarh board of secondary education</option>
+<option value="egy">Goa board of secondary and higher secondary education</option>
+<option value="fin">Gujrat secondary and higher secondary education</option>
+<option value="ger">Haeryana board of school education</option>
+<option value="hon">Karnataka Secondary Education,Examination Board</option>
+<option value="ind">Kerala board of public examination</option>
+<option value="jap">Board of secondary education Madhya Pradesh</option>
+<option value="kuw">Meghalaya board of school education</option>
+<option value="mal">Odisha punjab school education board</option>
+<option value="nep">Rajasthan board of secondary education</option>
+<option value="oma">Telangana open school society</option>
+<option value="por">Tripura board of secondary education</option>
+<option value="rom">Board of school education Uttarkhand</option>
+<option value="swe">West bengal council of secondary education</option>
+<option value="tha">State Madrass education board</option>
+<option value="tur">HP Board of school education</option>
+<option value="ukr">jharkhand academic council</option>
+<option value="uni">Maharastra state board</option>
+<option value="usa">Board of school education Nagaland</option>
+<option value="uae">Tamilnadu board of secondary education</option>
+<option value="yem">MP State open school education board</option>
+<option value="zam">J&K State board of school education</option>
+<option value="zim">Board of secondary education Rajasthan</option>
+
+</select>
+</div></td></tr>
+<tr>
+        <td width="125"> &nbsp;Previous Institution Name</td>
+        <td width="180"><div class="input-group">
+          <input type="text" name="Iname" size="20" placeholder="enter institution name"></div>
+        </td>
+      </tr> 
+       <tr>
+	  <td> &nbsp;Pin Code:</td>
+	  <td><div class ="input-group"><input type="text" name="pin" placeholder="enter pin code"></div>
+	  </td>
+	  </tr>
+	  <tr>
+        <td> &nbsp;Email</td>
+        <td><div  class="input-group"><input type="text" name="email" placeholder="enter mail id"></div>
+        </td>
+      </tr>
+	   <tr>
+        <td> &nbsp;Password</td>
+        <td><div  class="input-group"><input type="password" name="Password" placeholder="enter password"></div>
+        </td>
+      </tr>
+      <tr>
+        <td> &nbsp;Confirm Password</td>
+        <td><div  class="input-group"><input type="password"  name="ConPassword" placeholder="confirm password"></div>
+        </td>
+      </tr>
+<tr><td></td><td><input type="submit" name="Submit" value="Submit" class="btn">&nbsp&nbsp
+<input type="reset" name="reset" value="Reset" class="btn"></td></tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
