@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{
+box-sizing:border-box;
+}
+
+#myInput {
+  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 13px 20px 13px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: yellow;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #19282F;
+}
+</style>
+</head>
+<body>
+<h2>Countries in the World</h2>
+<input type="text" id="myInput" onkeyup="myFunction()"
+ placeholder="Search for country names among the list....." title="Type the country name">
+   <ul id="myUL">
+    <li><a href="#">China </a></li>
+   <li><a href="#">India</a></li>
+    <li><a href="#">Indonesia</a></li>
+	 <li><a href="#">Pakistan</a></li>
+	  <li><a href="#">Bagladesh</a></li>
+	   <li><a href="#">Japan</a></li>
+	    <li><a href="#">Philippines</a></li>
+		 <li><a href="#">Vietnam</a></li>
+		  <li><a href="#">Turkey</a></li> 
+		  <li><a href="#">Iran</a></li>
+		   <li><a href="#">Thailand</a></li>
+		    <li><a href="#">Myanmar</a></li>
+			 <li><a href="#">South Korea</a></li> 
+			 <li><a href="#">Iraq</a></li> 
+			 <li><a href="#">Afghanisthan</a></li> 
+			 <li><a href="#">Saudi Arabia</a></li> 
+			 <li><a href="#">Malaysia</a></li> 
+			 <li><a href="#">Yemen</a></li> 
+			 <li><a href="#">North Korea</a></li> 
+			 <li><a href="#">Srilanka</a></li> 
+			 <li><a href="#">kazakhstan</a></li> 
+			 <li><a href="#">Syria</a></li> 
+			 <li><a href="#">Cambodia</a></li> 
+			 <li><a href="#">Jordan</a></li> 
+			 <li><a href="#">United Arab Emirates</a></li> 
+			 <li><a href="#">Israel</a></li> 
+			 <li><a href="#">Laos</a></li> 
+			 <li><a href="#">Singapore</a></li> 
+                          <li><a href="#">Oman</a></li> 
+                          <li><a href="#">Kuwait</a></li> 
+                           <li><a href="#">Georgia</a></li> 
+                           <li><a href="#">Mongolia</a></li> 
+                            <li><a href="#">Armenia</a></li> 
+                             <li><a href="#">Qatar</a></li> 
+                             <li><a href="#">Bhutan</a></li> 
+                              <li><a href="#">Maldives</a></li> 
+			 </ul> 
+	
+			 
+<script>
+function myFunction() {
+  
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
