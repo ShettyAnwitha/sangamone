@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Generate 6 digit and 4 digit random number
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: red;
+        }
+        #minval {
+            color: black; 
+            font-size: 35px;
+            font-weight: bold;
+        }
+		 #min {
+            color: black; 
+            font-size: 35px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+  
+<body>
+
+    <h1>  
+      4-digit and 6-digit random number generation 
+    </h1>
+    <p>
+          
+      
+      Click on the button to generate 4 didgit random  number
+    </p>
+    <button onclick="randomnumber();">
+        click here
+    </button>
+    <p id="minval">
+    </p>
+    <script>
+        var up = document.getElementById('maxval');
+        var down = document.getElementById('minval');
+  
+        function randomnumber() {
+            var minm = 1000;
+            var maxm = 9999;
+            down.innerHTML = Math.floor(Math
+            .random() * (maxm - minm + 1)) + minm;
+        }
+    </script>
+	
+	
+	  <p>
+          
+      
+      Click on the button to generate random 
+      6 digit number
+    </p>
+    <button onclick="randomno();">
+        click here
+    </button>
+    <p id="min">
+    </p>
+    <script>
+        var up = document.getElementById('max');
+        var down = document.getElementById('min');
+  
+        function randomno() {
+            var minm = 100000;
+            var maxm = 999999;
+            down.innerHTML = Math.floor(Math
+            .random() * (maxm - minm + 1)) + minm;
+        }
+    </script>
+	
+</body>
+  
+</html>
